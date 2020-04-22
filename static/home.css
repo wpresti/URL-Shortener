@@ -1,0 +1,20 @@
+h1 {
+    color: green;
+}
+div.urlBox {
+    height: 10em;
+    position: relative }
+    
+div.urlBox {
+    margin: 0;
+    background: #b9bbc0;
+    position: fixed;
+    top: 50%;
+    left: 50%;
+    margin-right: -50%;
+    transform: translate(-50%, -50%) }
+    
+
+body {
+    background-color: #b9bbc0;
+}   

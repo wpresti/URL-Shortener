@@ -1,0 +1,28 @@
+<head>
+    <link rel="stylesheet" type="text/css" href="./static/create.css">
+    <script type="text/javascript" src="./static/create.js"></script>
+</head>
+<body>
+    <div class="link">
+        <textarea id="linkText" rows="1" cols="50">
+            {{.Link}}
+        </textarea>
+        <button type="button" onclick="copyLink()">Copy link</button>
+    </div>
+</body>
+
+<script>
+
+function copyLink() {
+    var copyText = document.getElementById("linkText");
+    
+    /* Select the text field */
+    copyText.select();
+    copyText.setSelectionRange(0, 99999); /*For mobile devices*/
+    
+    /* Copy the text inside the text field */
+    document.execCommand("copy");
+    
+
+}
+</script>
